@@ -1,0 +1,4 @@
+<h1>{{temperature()+'°C'}}</h1>
+@if (alarm){
+  <h1 [class.warning]="alarm">ALARM</h1>
+}
