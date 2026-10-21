@@ -1,0 +1,10 @@
+Control padre temperatura: {{ this.temperature }}
+<app-control-temperature
+  [temperature]="this.temperature"
+  (temperatureOutput)="onCambioTemperaturaOutput($event)"
+  (umbralOutput)="onCambioUmbralOutput($event)"
+></app-control-temperature>
+<app-display-thermostate
+  [temperature]="this.temperature"
+  [umbral]="this.umbral"
+></app-display-thermostate>

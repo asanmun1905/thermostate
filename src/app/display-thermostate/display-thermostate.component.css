@@ -6,5 +6,5 @@
 }
 
 :host(.warning) {
-  background-color: #red
+  background-color: red
 }
